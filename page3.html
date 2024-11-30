@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 - Poll</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <style>
+        /* Root Colors Inspired by SDG Goals */
+        :root {
+            --primary-green: #006c35;
+            --secondary-green: #007a3d;
+            --button-blue: #1976d2;
+            --button-red: #d32f2f;
+            --background-light: #f5f5f5;
+            --text-dark: #333;
+            --white: #fff;
+        }
+
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Poll Section */
+        .poll-section {
+            margin: 30px auto;
+            padding: 20px;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .poll-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons Section */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: var(--white);
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.yes {
+            background: var(--button-blue);
+        }
+
+        .button.no {
+            background: var(--button-red);
+        }
+
+        .button.home {
+            background: var(--primary-green);
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 10px 20px;
+            background: var(--primary-green);
+            color: var(--white);
+            font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .poll-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Poll</h1>
+    </header>
+
+    <!-- Poll Section -->
+    <div class="poll-section" data-aos="fade-up">
+        <h2>Did you enjoy the games?</h2>
+        <div class="button-container">
+            <a href="page4.html">
+                <button class="button yes">Yes</button>
+            </a>
+            <a href="page5.html">
+                <button class="button no">No</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="button-container" data-aos="fade-up">
+        <a href="index.html">
+            <button class="button home">Go Back to Home Page</button>
+        </a>
+        <a href="page2.html">
+            <button class="button home">Go Back to Page 2</button>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Eco Game | All rights reserved.</p>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

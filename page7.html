@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - UN SDG Inspired</title>
+    <style>
+        /* Root Variables for SDG Design */
+        :root {
+            --sdg-green: #4CAF50;
+            --sdg-blue: #2196F3;
+            --sdg-red: #E53935;
+            --sdg-yellow: #FFC107;
+            --sdg-purple: #9C27B0;
+            --text-dark: #212121;
+            --text-light: #FFFFFF;
+            --bg-light: #F5F5F5;
+        }
+
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            background-color: var(--sdg-blue);
+            color: var(--text-light);
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1rem;
+            margin: 5px 0 0;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 20px;
+            padding: 40px;
+            background-color: var(--text-light);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: var(--sdg-green);
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        /* Buttons */
+        .content a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+            color: var(--text-light);
+            background: linear-gradient(45deg, var(--sdg-green), var(--sdg-blue));
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, var(--sdg-red), var(--sdg-yellow));
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            background-color: var(--sdg-blue);
+            color: var(--text-light);
+            padding: 20px 10px;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: var(--text-light);
+            text-decoration: underline;
+        }
+
+        /* SDG Icon Grid */
+        .sdg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            margin: 30px 0 20px;
+        }
+
+        .sdg-icon {
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .goal1 {
+            background-image: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/E_SDG-goal-01.png');
+        }
+
+        .goal2 {
+            background-image: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/E_SDG-goal-02.png');
+        }
+
+        .goal3 {
+            background-image: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/E_SDG-goal-03.png');
+        }
+
+        .goal4 {
+            background-image: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/E_SDG-goal-04.png');
+        }
+
+        .goal5 {
+            background-image: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/E_SDG-goal-05.png');
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            .sdg-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Thank You for Your Feedback</h1>
+        <p>Working Together for a Better World</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Your Opinion Matters</h2>
+        <p>
+            We are committed to improving our services and creating a sustainable future. Your feedback contributes
+            to our mission of achieving the UN Sustainable Development Goals.
+        </p>
+        <!-- SDG Icons -->
+        <div class="sdg-grid">
+            <div class="sdg-icon goal1"></div>
+            <div class="sdg-icon goal2"></div>
+            <div class="sdg-icon goal3"></div>
+            <div class="sdg-icon goal4"></div>
+            <div class="sdg-icon goal5"></div>
+        </div>
+        <a href="page6.html"><button>Proceed to Next Page</button></a>
+        <a href="index.html"><button>Go Back to Home</button></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Organization. Inspired by <a href="https://sdgs.un.org/">UN SDGs</a>.</p>
+    </footer>
+</body>
+
+</html>
